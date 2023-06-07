@@ -1,0 +1,60 @@
+@use './variables' as v;
+@use './breakpoints' as b;
+
+.signup {
+  padding-block-end: 3.125rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+
+
+  &_textbox {
+    padding-inline: 1.5625rem;
+
+    h2 {
+        font-size: 35px;
+        color: v.$DarkSlateGrey;
+        padding-block-end: 1.25rem;
+    }
+
+    ul {
+        position: relative;
+        margin-block: 1.25rem;
+    }
+
+    li {
+        list-style-type: none;
+        padding-inline-start: 1.875rem;
+        position: relative;
+        padding-block-end: .625rem;
+    }
+
+    ul li:before {
+        content: '';
+        position: absolute;
+        left: -0.25rem;
+        width: 1.4375rem;
+        height: 1.4375rem;
+        background-image: url('../assets/images/icon-success.svg');
+        background-position: center;
+        background-size: contain;
+    }
+  }
+
+  &_image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+//breakpoint for tablet and above
+@include b.md-tab {
+  .signup {
+    padding-block-end: 0px;
+    flex-direction: row;
+    align-items: center;
+  }
+}

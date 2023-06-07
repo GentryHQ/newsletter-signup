@@ -1,0 +1,49 @@
+@use './variables' as v;
+@use './breakpoints' as b;
+
+.success {
+    padding-inline: 1.875rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+
+    
+
+    h3 {
+        margin-block: 1.875rem;
+        font-size: 35px;
+    }
+
+    button {
+        margin-block: 5.625rem;
+        padding: 1.25rem;
+        inline-size: 100%;
+        background-color: v.$DarkSlateGrey;
+        color: v.$White;
+        border: none;
+        border-radius: .3125rem;
+
+        &:hover {
+            @include v.hover;
+        }
+    }
+}
+
+.active {
+    display: flex;
+}
+
+//Breakpoints
+@include b.md-tab {
+    .success {
+        height: min-content;
+        max-inline-size: 31.25rem;
+        padding: 1.875rem;
+
+        button {
+            margin-block: 40px 0px;
+        }
+    }
+}

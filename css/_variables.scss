@@ -1,0 +1,35 @@
+@use './breakpoints' as b;
+
+//Color Variables
+$Tomato: hsl(4, 100%, 67%);
+$DarkSlateGrey: hsl(234, 29%, 20%);
+$CharcoalGrey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+//Font Variables
+$fontwgt1: 400;
+$fontwgt2: 700;
+
+//mixin controls over button
+@mixin hover {
+    background-color: $Tomato;
+    cursor: pointer;
+    box-shadow: $Tomato 0px 8px 20px;
+}
+
+//controls the width of the website 
+.container {
+    max-inline-size: 800px;
+    background-color: $White;
+}
+
+// breakpoint for container
+@include b.md-tab {
+    .container{
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+        margin-inline: 1.25rem;
+    } 
+
+} 

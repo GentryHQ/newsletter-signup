@@ -1,0 +1,58 @@
+@use './variables' as v;
+
+.formcontrol {
+    
+    .sub {
+
+        label {
+            font-weight: v.$fontwgt2;
+            // display: inline-block;
+            // margin-inline-end: 60px;
+        }
+
+        #error {
+            font-size: 15px;
+            color: v.$Tomato;
+            font-weight: v.$fontwgt2;
+        }
+
+        .title {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .email {
+            padding: .9375rem;
+            margin-block: .625rem;
+            width: 100%;
+            border-radius: .3125rem;
+            border: v.$Grey solid 2px;
+            outline: none;
+            background-color: v.$White;
+            font-size: .9375rem;
+
+            &:focus-within {
+                border-color: v.$DarkSlateGrey;
+            }
+        }
+
+        .emailErr {
+            border-color: v.$Tomato;
+        }
+
+        .subBtn {
+            width: 100%;
+            padding: 1.25rem;
+            background-color: v.$DarkSlateGrey;
+            color: v.$White;
+            border-radius: .3125rem;
+            border: none;
+            font-size: .9375rem;
+
+            &:hover {
+                @include v.hover;
+            }
+        }
+    }
+}
