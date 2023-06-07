@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://your-solution-url.com)
-- Live Site URL: [Github Page Link](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/GentryHQ/newsletter-signup)
+- Live Site URL: [Github Page Link](https://gentryhq.github.io/newsletter-signup/)
 
 ## My process
 
@@ -74,7 +74,7 @@ I think in te future, I might actually add this form with a blog website I did s
 
 ## Author
 
-- Website - [www.gentry.com.ng](https://www.your-site.com)
+- Website - [www.gentry.com.ng](https://www.gentry.com.ng)
 - Frontend Mentor - [@GentryHQ](https://www.frontendmentor.io/profile/gentryhq)
 - Twitter - [@iam_gentry](https://www.twitter.com/iam_gentry)
 
